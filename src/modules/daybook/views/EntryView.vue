@@ -18,14 +18,14 @@
             class="btn btn-danger mx-2"
             @click="onDeleteEntry">
             Borrar
-            <i class="fa fa-trash-alt"></i>
+            <em class="fa fa-trash-alt"></em>
         </button>
 
         <button 
             class="btn btn-primary"
             @click="onSelectImage">
             Subir foto
-            <i class="fa fa-upload"></i>
+            <em class="fa fa-upload"></em>
         </button>
     </div>
   </div>
@@ -65,6 +65,7 @@ import Swal from 'sweetalert2'
 import uploadImage from '../helpers/uploadImage'
 
     export default {
+        name: 'EntryView',
         props: {
             id: {
                 type: String,
